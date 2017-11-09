@@ -1,9 +1,12 @@
 package com.wk.simplerpc.common;
 
+import org.springframework.stereotype.Component;
+
 /**
  * PackageName com.wk.simplerpc.common
  * Created by wangkang on 2017/11/8.
  */
+@Component
 public class Constant {
     //zk seesion过期时间
     public static int ZK_SESSION_TIMEOUT = 5000;

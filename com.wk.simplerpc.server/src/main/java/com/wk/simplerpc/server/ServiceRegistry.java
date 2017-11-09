@@ -69,6 +69,7 @@ public class ServiceRegistry {
         try {
             byte[] bytes = data.getBytes();
             // 判断目录是否存在，如果不存在则进行创建
+            logger.info("wk-->path: " + Constant.ZK_REGISTRY_PATH);
             if (zk.exists(Constant.ZK_REGISTRY_PATH, false) == null) {
                 zk.create(Constant.ZK_REGISTRY_PATH, "".getBytes(),
                         ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);

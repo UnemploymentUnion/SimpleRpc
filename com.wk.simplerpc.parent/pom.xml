@@ -19,5 +19,6 @@
     <modules>
         <module>../com.wk.simplerpc.server</module>
         <module>../com.wk.simplerpc.common</module>
+        <module>../com.wk.simplerpc.service</module>
     </modules>
 </project>
